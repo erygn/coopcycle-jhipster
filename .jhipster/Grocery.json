@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20220415102125",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "grocery",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "adress",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Grocery",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "basket",
+      "otherEntityRelationshipName": "grocery",
+      "ownerSide": true,
+      "relationshipName": "basket",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "payment",
+      "otherEntityRelationshipName": "grocery",
+      "ownerSide": false,
+      "relationshipName": "payment",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "userCoop",
+      "otherEntityRelationshipName": "grocery",
+      "relationshipName": "userCoop",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

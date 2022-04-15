@@ -1,0 +1,53 @@
+entity UserCoop {
+    name String required
+}
+
+entity Grocery {
+    id String required,
+    adress String required
+}
+
+entity Payment {
+	id String required,
+	amount Integer required min(0)
+}
+
+entity Basket {
+	id String required
+}
+
+entity Product {
+    name String required minlength(4)
+    price Float required min(0)
+    quantity Integer required min(0)
+}
+
+entity Restaurant {
+    name String required pattern(/[a-z]/),
+    location String required
+}
+
+entity Cooperative {
+    name String required
+}
+
+relationship ManyToMany {
+	UserCoop to Cooperative
+}
+
+relationship OneToMany {
+    UserCoop to Grocery,
+    Basket to Product,
+    Restaurant to Product,
+    UserCoop to Restaurant,
+    UserCoop to Basket,
+}
+
+
+relationship OneToOne {
+    Grocery to Basket,
+    Payment to Grocery,
+}
+
+dto * with mapstruct
+service * with serviceImpl

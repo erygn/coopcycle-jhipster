@@ -1,0 +1,26 @@
+{
+  "coopcycleApp": {
+    "basket": {
+      "home": {
+        "title": "Baskets",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Basket erstellen",
+        "createOrEditLabel": "Basket erstellen oder bearbeiten",
+        "notFound": "Keine Baskets gefunden"
+      },
+      "created": "Basket erstellt mit ID {{ param }}",
+      "updated": "Basket aktualisiert mit ID {{ param }}",
+      "deleted": "Basket gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Basket {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Basket"
+      },
+      "id": "Id",
+      "product": "Product",
+      "grocery": "Grocery",
+      "userCoop": "User Coop"
+    }
+  }
+}

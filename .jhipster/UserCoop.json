@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20220415102124",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "user_coop",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "UserCoop",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "grocery",
+      "otherEntityRelationshipName": "userCoop",
+      "relationshipName": "grocery",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "restaurant",
+      "otherEntityRelationshipName": "userCoop",
+      "relationshipName": "restaurant",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "basket",
+      "otherEntityRelationshipName": "userCoop",
+      "relationshipName": "basket",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "cooperative",
+      "otherEntityRelationshipName": "userCoop",
+      "ownerSide": true,
+      "relationshipName": "cooperative",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

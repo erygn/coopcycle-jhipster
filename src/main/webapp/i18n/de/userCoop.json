@@ -1,0 +1,28 @@
+{
+  "coopcycleApp": {
+    "userCoop": {
+      "home": {
+        "title": "User Coops",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "User Coop erstellen",
+        "createOrEditLabel": "User Coop erstellen oder bearbeiten",
+        "notFound": "Keine User Coops gefunden"
+      },
+      "created": "User Coop erstellt mit ID {{ param }}",
+      "updated": "User Coop aktualisiert mit ID {{ param }}",
+      "deleted": "User Coop gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll User Coop {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "User Coop"
+      },
+      "id": "ID",
+      "name": "Name",
+      "grocery": "Grocery",
+      "restaurant": "Restaurant",
+      "basket": "Basket",
+      "cooperative": "Cooperative"
+    }
+  }
+}

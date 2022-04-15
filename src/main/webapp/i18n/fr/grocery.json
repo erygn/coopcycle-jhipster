@@ -1,0 +1,27 @@
+{
+  "coopcycleApp": {
+    "grocery": {
+      "home": {
+        "title": "Groceries",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Grocery",
+        "createOrEditLabel": "Créer ou éditer un Grocery",
+        "notFound": "Aucun Grocery trouvé"
+      },
+      "created": "Un nouveau Grocery a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Grocery avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Grocery avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Grocery {{ id }} ?"
+      },
+      "detail": {
+        "title": "Grocery"
+      },
+      "id": "Id",
+      "adress": "Adress",
+      "basket": "Basket",
+      "payment": "Payment",
+      "userCoop": "User Coop"
+    }
+  }
+}
